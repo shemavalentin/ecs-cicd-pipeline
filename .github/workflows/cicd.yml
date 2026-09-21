@@ -74,7 +74,7 @@ jobs:
       - name: Download Active Task Definition
         run: |
           aws ecs describe-task-definition \
-            --task-definition nginx-service \
+            --task-definition nginx-task \
             --query taskDefinition > task-definition.json
 
       - name: Render New Image Tag in Task Definition
@@ -82,7 +82,7 @@ jobs:
         uses: aws-actions/amazon-ecs-render-task-definition@v1
         with:
           task-definition: task-definition.json
-          container-name: portfolio2  # <-- Replace with your exact container name in the Task Definition
+          container-name: nginx
           image: ${{ steps.login-ecr.outputs.registry }}/${{ vars.ECR_REPOSITORY }}:${{ github.sha }}
 
       - name: Deploy Amazon ECS Task Definition
