@@ -1,4 +1,4 @@
-# Creating the pipeline configuration for CI/CD in GitHub Actions. 
+# Creating the pipeline configuration for CI/CD in GitHub Actions.
 # This workflow will automate the build, test, and deployment processes for the project.
 
 name: Build and Push Image
@@ -6,19 +6,17 @@ name: Build and Push Image
 on:
   push:
     branches:
-      - main
+      - master
 
 permissions:
   id-token: write
   contents: read
 
 jobs:
-
   build:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Checkout Code
         uses: actions/checkout@v4
 
@@ -44,4 +42,3 @@ jobs:
         run: |
           docker push \
           ${{ steps.login-ecr.outputs.registry }}/${{ vars.ECR_REPOSITORY }}:latest
-
