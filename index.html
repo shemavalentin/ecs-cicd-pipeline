@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> NIWEBASA Valentin- DevOps & Platform Engineer Resume</title>
+    <style>
+        :root {
+            --primary: #1e293b;
+            --accent: #2563eb;
+            --text: #334155;
+            --light-text: #64748b;
+            --bg: #f8fafc;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            background-color: #cbd5e1;
+            line-height: 1.4;
+            font-size: 13px;
+        }
+
+        .page {
+            background: white;
+            width: 210mm;
+            height: 297mm;
+            /* Standard A4 single page height */
+            margin: 20px auto;
+            padding: 24px 28px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        header {
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 10px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .header-left h1 {
+            font-size: 22px;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+            text-transform: uppercase;
+        }
+
+        .header-left h2 {
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            margin-top: 2px;
+        }
+
+        .header-right {
+            text-align: right;
+            font-size: 11px;
+            color: var(--light-text);
+            line-height: 1.5;
+        }
+
+        .header-right a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+        }
+
+        .summary {
+            font-size: 12px;
+            color: var(--text);
+            line-height: 1.4;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 4px 12px;
+            font-size: 11.5px;
+        }
+
+        .skill-category {
+            display: flex;
+        }
+
+        .skill-category strong {
+            color: var(--primary);
+            min-width: 110px;
+        }
+
+        .job {
+            margin-bottom: 8px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 12px;
+            color: var(--primary);
+        }
+
+        .job-sub {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: var(--accent);
+            margin-bottom: 4px;
+            font-style: italic;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 16px;
+        }
+
+        li {
+            margin-bottom: 3px;
+            font-size: 11.5px;
+        }
+
+        .project-item {
+            margin-bottom: 6px;
+        }
+
+        .project-title {
+            font-weight: 600;
+            font-size: 12px;
+            color: var(--primary);
+        }
+
+        .education-grid {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11.5px;
+        }
+
+        @media print {
+            body {
+                background: none;
+            }
+
+            .page {
+                margin: 0;
+                box-shadow: none;
+                width: 100%;
+                height: 100vh;
+                padding: 20px 24px;
+            }
+
+            @page {
+                size: A4;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+        <div>
+            <!-- HEADER -->
+            <header>
+                <div class="header-left">
+                    <h1>Valentin Niwebasa</h1>
+                    <h2>DevOps & Platform Engineer</h2>
+                </div>
+                <div class="header-right">
+                    <p>Location: Kigali, Rwanda</p>
+                    <p>Email: valentin@example.com | Phone: +250 788 000 000</p>
+                    <p>LinkedIn: linkedin.com/in/valentin-niwebasa | GitHub: github.com/valentin</p>
+                </div>
+            </header>
+
+            <!-- SUMMARY -->
+            <section>
+                <div class="section-title">Professional Summary</div>
+                <p class="summary">
+                    Results-driven DevOps & Platform Engineer with 6+ years of experience designing, automating, and
+                    scaling high-availability cloud infrastructure across AWS and Azure environments. Specialized in
+                    Infrastructure as Code (Terraform), container orchestration (Docker/Kubernetes), and CI/CD
+                    automation. Proven track record in optimizing cloud spend, streamlining software delivery pipelines,
+                    and architecting secure enterprise integrations.
+                </p>
+            </section>
+
+            <!-- SKILLS -->
+            <section>
+                <div class="section-title">Core Competencies & Technical Skills</div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <strong>Cloud Platforms:</strong> AWS (VPC, EC2, ECS, EKS, CloudFront, ALB, S3, RDS), Azure
+                    </div>
+                    <div class="skill-category">
+                        <strong>Infrastructure as Code:</strong> Terraform (Modular/Multi-Tier), CloudFormation
+                    </div>
+                    <div class="skill-category">
+                        <strong>Containers & Orchestration:</strong> Docker, Kubernetes, Amazon ECS, Helm
+                    </div>
+                    <div class="skill-category">
+                        <strong>CI/CD & Automation:</strong> GitHub Actions, GitLab CI, Jenkins, Ansible
+                    </div>
+                    <div class="skill-category">
+                        <strong>Monitoring & Logging:</strong> Prometheus, Grafana, AWS CloudWatch, Datadog
+                    </div>
+                    <div class="skill-category">
+                        <strong>Networking & Security:</strong> VPC Peering, Route53, IAM Policies, OpenSSL, TLS/SSL
+                    </div>
+                </div>
+            </section>
+
+            <!-- EXPERIENCE -->
+            <section>
+                <div class="section-title">Professional Experience</div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span>Senior DevOps & Platform Engineer</span>
+                        <span>2023 – Present</span>
+                    </div>
+                    <div class="job-sub">
+                        <span>Enterprise Cloud Solutions</span>
+                        <span>Kigali, Rwanda</span>
+                    </div>
+                    <ul>
+                        <li>Architected and managed multi-tier AWS environments using modular Terraform configurations,
+                            provisioning custom VPCs, CloudFront CDNs, ALBs, and Amazon RDS PostgreSQL instances.</li>
+                        <li>Designed automated CI/CD pipelines via GitHub Actions and Docker, reducing application
+                            deployment cycle times by 45%.</li>
+                        <li>Configured Ansible playbooks for automated configuration management and patch updates across
+                            Linux server fleets.</li>
+                        <li>Engineered robust monitoring stacks using Prometheus and Grafana, maintaining 99.95% system
+                            uptime across production microservices.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span>DevOps & Infrastructure Engineer</span>
+                        <span>2020 – 2023</span>
+                    </div>
+                    <div class="job-sub">
+                        <span>Tech Innovators Ltd</span>
+                        <span>Kigali, Rwanda</span>
+                    </div>
+                    <ul>
+                        <li>Containerized legacy monolithic applications into Docker microservices and migrated
+                            workloads to AWS ECS (Fargate).</li>
+                        <li>Implemented zero-downtime blue/green deployment strategies for backend RESTful APIs.</li>
+                        <li>Enforced strict cloud security policies, role-based access control (IAM), and secrets
+                            management practices.</li>
+                        <li>Collaborated with software development teams to troubleshoot build failures, container
+                            networking, and DNS configurations.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span>Cloud & Systems Administrator</span>
+                        <span>2018 – 2020</span>
+                    </div>
+                    <div class="job-sub">
+                        <span>Global IT Systems</span>
+                        <span>Kigali, Rwanda</span>
+                    </div>
+                    <ul>
+                        <li>Managed Linux/Windows server infrastructure, network routing, storage pools, and backup
+                            systems.</li>
+                        <li>Automated system maintenance tasks using Bash and Python scripts, reducing manual
+                            operational overhead by 30%.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- PROJECTS & INTEGRATIONS -->
+            <section>
+                <div class="section-title">Key Projects & System Integrations</div>
+                <div class="project-item">
+                    <div class="project-title">ERP-HR Microservices Deployment & Tax Authority API Integration</div>
+                    <ul>
+                        <li>Led infrastructural setup for enterprise ERP-HR microservice deployments, managing container
+                            orchestration, load balancing, and API gateway routing.</li>
+                        <li>Coordinated technical integrations and delivered secure API documentation under government
+                            Mou frameworks (e.g., Rwanda Revenue Authority).</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <!-- EDUCATION -->
+        <section>
+            <div class="section-title">Education & Professional Development</div>
+            <div class="education-grid">
+                <div>
+                    <strong>Bachelor of Science in Computer Science</strong>
+                </div>
+                <div>
+                    <span>Graduated with Honors</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
